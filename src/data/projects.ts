@@ -1,0 +1,6 @@
+export type Project = { id: string; name: string; category: string; role: string; description: string; tags: string[]; focus: string; result: string; url: string };
+export const projects: Project[] = [
+  { id: 'lost-light', name: 'Lost Light', category: 'GAME / ENGINE', role: 'Rendering · Input · Tools', description: '큰 스테이지를 다루는 C++ 기반 2D 액션 게임.', tags: ['C++', 'Batch Rendering', 'Level Editor'], focus: '화면보다 넓은 맵을 미리 로드하는 구조에서 배치 렌더링을 적용하고, 입력 처리·맵 생성·자체 에디터 개발에 참여했습니다.', result: '배치 렌더링 적용으로 더 큰 맵을 처리하고 프레임을 개선했습니다.', url: 'https://github.com/WonhyeongChae/Lost-Light' },
+  { id: 'refraction', name: 'Refraction', category: 'GAMEPLAY / GRAPHICS', role: 'Lighting · Collision · Gameplay', description: '빛과 거울을 활용하는 자체 엔진 기반 2D 퍼즐 게임.', tags: ['C++', 'Lighting', 'Collision'], focus: '빛 렌더링·충돌 처리·기본 게임플레이에 참여했습니다. 지속적인 이동 입력으로 맵 경계를 벗어나는 문제를 다뤘습니다.', result: '별도 빌드로 충돌 개선안과 거울 로직을 테스트하고, 팀원과 양쪽 요구를 반영했습니다.', url: 'https://github.com/tylerdeandigipen/Vyv_Lantern' },
+  { id: 'vulkan', name: 'Vulkan Renderer', category: 'RENDERING', role: 'Graphics programming project', description: 'C++와 Vulkan을 활용한 실시간 레이 트레이싱 프로젝트.', tags: ['C++', 'Vulkan', 'GLSL'], focus: '레이 트레이싱 파이프라인과 컴퓨트 셰이더 기반 디노이징을 다룬 프로젝트입니다.', result: '저장소에서 렌더링 파이프라인과 셰이더 코드를 확인할 수 있습니다.', url: 'https://github.com/WonhyeongChae/Vulkan_Ray_tracing' }
+];
